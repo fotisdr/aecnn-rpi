@@ -13,7 +13,7 @@ from keras.layers import LeakyReLU, PReLU, Reshape, Concatenate, Flatten, Activa
 from keras.models import Sequential, Model
 from keras.optimizers import Adam
 from keras.callbacks import TensorBoard
-from normalizations import InstanceNormalization
+#from normalizations import InstanceNormalization
 #from bnorm import VBN
 #Conv2DTranspose = tf.keras.layers.Conv2DTranspose
 keras_backend = tf.keras.backend

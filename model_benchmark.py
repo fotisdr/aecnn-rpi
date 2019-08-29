@@ -228,7 +228,7 @@ for modeldir in listdir(directory):
                                         noisy[0,:,0] = scaled[i*blocksize:(i+1)*blocksize] #.astype(precision)
                                         t = time()
                                         clean = sess.run(prob_tensor, {input_node: noisy })
-                                        clean.ravel()
+                                        clean = clean.ravel()
                                         t_total1 += time() - t
                                     mean_time = t_total1 / ie
                                     t_total += mean_time
@@ -274,7 +274,7 @@ for modeldir in listdir(directory):
                                         noisy[0,:,0] = scaled[i*blocksize:(i+1)*blocksize] #.astype(precision)
                                         t = time()
                                         clean = G_loaded.predict(noisy)
-                                        clean.ravel()
+                                        clean = clean.ravel()
                                         t_total1 += time() - t
                                     mean_time = t_total1 / ie
                                     t_total += mean_time

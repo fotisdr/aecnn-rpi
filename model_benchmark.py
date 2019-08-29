@@ -110,13 +110,13 @@ for modeldir in listdir(directory):
                 args.framesize = 256
             if int(modeldir[6])==5:
                 args.framesize = 512
-        if args.framesize = 1024:
+        if args.framesize == 1024:
                 buf_j = 3
-        elseif args.framesize = 128:
+        elif args.framesize == 128:
                 buf_j = 2
-        elseif args.framesize = 256:
+        elif args.framesize == 256:
             buf_j = 3
-        elseif args.framesize = 512:
+        elif args.framesize == 512:
             buf_j = 3
         else:
             print('Frame size should be 1024, 512, 256 or 128 samples')

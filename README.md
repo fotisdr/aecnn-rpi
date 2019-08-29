@@ -3,6 +3,8 @@
 Fotios Drakopoulos, Deepak Baby and Sarah Verhulst. Real-time audio processing on a Raspberry Pi using deep neural
 networks, 23rd International Congress on Acoustics, 9 to 13 September 2019 in Aachen, Germany.
 
+This work received funding from the European Research Council (ERC) under the Horizon 2020 Research and Innovation Programme (grant agreement No 678120 RobSpear)
+
 ----
 
 The Keras framework for the implementation of the AECNN models is adapted from [here](https://github.com/deepakbaby/se_relativisticgan). The necessary scripts can be found in the AECNN folder.

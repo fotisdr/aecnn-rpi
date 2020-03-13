@@ -27,12 +27,16 @@ python run_aecnn.py
 The `opts` variable needs to be edited to modify the architecture configurations of the AECNN model.
 
 ## Running the trained model in real-time
-```python
-python audio_processing.py -m model_directory -n model_input_size -f keras
-```
-The directory of the trained model needs to be defined with the `-m` argument as well as the input/output size of the model with the `-n` argument. Keras or Tensorflow can be used as the frontend (`-f`) and 0% or 50% overlap (`-o`) or frame buffering (`-b`) can be applied.
+1. To run the real-time framework, the jackclient-python module needs to be installed first. You can find the installations instructions on its github page: 
+https://github.com/spatialaudio/jackclient-python
 
-----
+2. After the installation of the jackclient, the trained model can be executed using the following command:
+    ```python
+    python audio_processing.py -m model_directory -n model_input_size -f keras
+    ```
+    The directory of the trained model needs to be defined with the `-m` argument as well as the input/output size of the model with the `-n` argument. Keras or Tensorflow can be used as the frontend (`-f`) and 0% or 50% overlap (`-o`) or frame buffering (`-b`) can be applied.
+
+    ----
 
 ### Benchmarking a model
 A trained model can be benchmarked within the current framework in terms of execution time, in order to get the time constrains for different settings. A .wav file needs to be provided (`-i`) and the (parent) directory containing the model folder(s) needs to be defined (`-d`). This way, multiple models can be benchmarked with this script.

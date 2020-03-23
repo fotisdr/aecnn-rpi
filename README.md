@@ -37,8 +37,8 @@ https://github.com/spatialaudio/jackclient-python
     python audio_processing.py -m model_directory -n model_input_size -f keras
     ```
     The directory of the trained model needs to be defined with the `-m` argument as well as the input/output size of the model with the `-n` argument. Keras or Tensorflow can be used as the frontend (`-f`) and 0% or 50% overlap (`-o`) or frame buffering (`-b`) can be applied.
-The audio_processing script calls the  
-    ----
+
+----
 
 ### Benchmarking a model
 A trained model can be benchmarked within the current framework in terms of execution time, in order to get the time constrains for different settings. A .wav file needs to be provided (`-i`) and the (parent) directory containing the model folder(s) needs to be defined (`-d`). This way, multiple models can be benchmarked with this script.

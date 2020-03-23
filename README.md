@@ -30,12 +30,14 @@ The `opts` variable needs to be edited to modify the architecture configurations
 1. To run the real-time framework, the jackclient-python module needs to be installed first. You can find the installations instructions on its github page: 
 https://github.com/spatialaudio/jackclient-python
 
-2. After the installation of the jackclient, the trained model can be executed using the following command:
+2. Set your sound device in the `start_jackd.sh` script (by default the primary sound device hw:0 is used).
+
+3. After the installation of the jackclient, the trained model can be executed using the following command:
     ```python
     python audio_processing.py -m model_directory -n model_input_size -f keras
     ```
     The directory of the trained model needs to be defined with the `-m` argument as well as the input/output size of the model with the `-n` argument. Keras or Tensorflow can be used as the frontend (`-f`) and 0% or 50% overlap (`-o`) or frame buffering (`-b`) can be applied.
-
+The audio_processing script calls the  
     ----
 
 ### Benchmarking a model
